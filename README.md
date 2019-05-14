@@ -112,7 +112,9 @@ This tool assumes the first command line argument will always be ``80``. If ever
 
 ![](resources/setup.png)
 
-Now there should exist a file called ``astroy``, whose path should be ``/usr/bin/astroy``. Run it to start the relevant servers for you, like this:
+## Usage
+
+Now, if the file ``setup.py`` exited without errors, there should exist a file called ``astroy``, whose path should be ``/usr/bin/astroy``. Run it to start the relevant servers for you, like this:
 
 ```sh
 astroy
@@ -121,4 +123,24 @@ astroy
 Your final output should resemble the one below:
 
 ![](resources/astroy.png)
+
+And you are live! All you need to do is send your target the landing page link, that is, ``https://astroy.serveo.net`` (there are tons of ways you could do this). Note that Serveo makes the link accessible through both ``http`` and ``https``. Since ``https`` is more appealing and convincing, all the anchor links point to ``https`` subdomains. Your job is to make sure you distribute the first link as ``https://astroy.serveo,net``, not as ``http://astroy.serveo.net`` (though using the latter is entirely up to you).
+
+## Meta
+
+Shoot me a message on Twitter- [@briancanspit](https://twitter.com/briancanspit)
+
+Follow me on Instagram- [@briancanspit](https://instagram.com/briancanspit)
+
+Or email me - briancanspit@gmail.com
+
+Distributed under the MIT license. See ``LICENSE`` for more information.
+
+## Donate
+
+[<img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate%20Any%20Amount-orange.svg">]()
+
+If you feel like my tool has been helpful or educative to you in any way, here's my bitcoin address - 1Po7v8gcwsfSxPrtNH1KgfmmV6hgYiqBTb
+
+Feel free to donate towards the development of more tools like this by me. Thanks in advance! 
 

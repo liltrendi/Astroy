@@ -12,7 +12,7 @@
 
 [![asciicast](https://asciinema.org/a/fz787azSdbP34fi9iE7dpf0hd.svg)](https://asciinema.org/a/fz787azSdbP34fi9iE7dpf0hd)
 
-I made this as a tool for personal use, and did not think I would come to open-source it. As a result, a LOT of assumptions have been made when coding this, and it's gonna take you a bit of tweaking and playing around with if the OS you're running isn't configured in accordance to how the script wants. Shouldn't be too hard, though.
+I made this as a tool without distribution in mind, and did not think I would come to open-source it. As a result, a LOT of assumptions have been made when coding this, and it's gonna take you a bit of tweaking and playing around with if the OS you're running isn't configured in accordance to how the script wants. Shouldn't be too hard, though.
 
 ## Why Astroy?
 
@@ -26,7 +26,7 @@ Astroy only serves as a proof of concept on what black hat hackers can achieve i
 
 ## Assumptions
 
-Because I coded this for personal use, I made this without consideration for other Linux OS'. As such, this tool is made with the assumption that:
+Because I initially coded this without distribution in mind, it was made without consideration for other Linux OS's. As such, this tool is made with the assumption that:
 
 1. You're system has Python 3. To set up most of the things that the tool needs, you'll need to run the main python file (``setup.py``) with Python 3. Also, the ``index.php`` files in the directories ``download`` and ``account/instagram`` make calls to Python 3 to run ``retrieve.py`` and ``del.py`` respectively. Depending on how you invoke your Python 3 (for example, I run files like this - ``python3 example.py`` - because my system has two Python versions installed), you might need to alter the default invocation in the ``index.php`` files specified above. Lastly, every Python file in Astroy has a shebang that invokes the Python 3 version installed on my system - this assumes that your Python 3 is located at ``/usr/bin/python3``. Change this line as necessary.
 

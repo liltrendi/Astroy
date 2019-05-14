@@ -105,7 +105,7 @@ python3 setup.py
 Running it without any arguments makes the script default to using the default ports, which are ``80``, ``3239``, ``8492`` and ``12345``. To provide your own arguments, run the script like this (assume you want the ports to be ``80``, ``444``, ``888`` and ``999``:
 
 ```sh
-python3 setup.py 80 564 3849 237
+python3 setup.py 80 444 888 999
 ```
 
 This tool assumes the first command line argument will always be ``80``. If everything goes well, your screen's output should resemble mine's:

@@ -58,3 +58,39 @@ Copy all the files in the directory to Apache's base directory:
 
 ```sh
 cp -r * /var/www/html
+```
+
+## Setting Things Up
+
+Get into the base directory the script relies on:
+
+```sh
+cd /var/www/html
+```
+
+You need to change ownership of the files recursively, to give Apache ownership. Run:
+
+```sh
+chown -R www-data *
+```
+
+Depending on how you invoke Python 3 on your system, run this command to install the requirements needed by Python:
+
+```sh
+python3 -m pip install -r requirements.txt
+```
+
+Finally, run the setup script. This simply checks whether you have internet, whether the packages are installed, whether you provided any ports as arguments and finally creates an ``astroy`` file at ``/usr/bin/`` which can be run globally from any directory. This setup script can be run without arguments like this:
+
+```sh
+python3 setup.py
+```
+
+Running it without any arguments makes the script default to using the default ports, which are ``80``, ``3239``, ``8492`` and ``12345``. To provide your own arguments, run the script like this (assume you want the ports to be ``80``, ``444``, ``888`` and ``999``:
+
+```sh
+python3 setup.py 80 444 888 999
+```
+
+This tool assumes the first command line argument will always be ``80``. 
+

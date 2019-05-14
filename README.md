@@ -16,7 +16,7 @@ I made this as a tool for personal use, and did not think I would come to open-s
 
 ## Why Astroy?
 
-We live in a generation where most people fall for get-rich-quick scams, but the effort required to social engineer them into falling for them is huge. Astroy sells itself as an ordinary website that pays users to install and use its Android apps, but however gathers user credentials of anyone who signs up to it, and provides a malicious ``APK`` file (a Flappy Bird game laced with a reverse-https payload) to download. If the user installs and runs the malicious game, the attacker will gain a Meterpreter session, effectively pulling off double penetration (no pun intended).
+We live in a generation where, although most people would fall for most get-rich-quick scams, the effort required to social engineer them into actually falling for them is tremendous. Astroy sells itself as an ordinary website that pays users to install and use its Android apps, but however gathers user credentials of anyone who signs up to it, and provides a malicious ``APK`` file (a Flappy Bird game laced with a reverse-https payload) to download. If the user installs and runs the malicious game, the attacker will gain a Meterpreter session, effectively pulling off double penetration (no pun intended).
 
 The web templates include a normal sign up page, and an Instagram clone. The reason I did not add more popular templates like Facebook and Google is because their designs weren't as appealing as Instagram's. Special shout out to [thelinuxchoice](https://github.com/thelinuxchoice) for the Instagram phishing template - I modified their version a bit, removed their backend and added mine.
 

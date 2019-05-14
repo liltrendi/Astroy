@@ -110,7 +110,7 @@ python3 setup.py 80 444 888 999
 
 This tool assumes the first command line argument will always be ``80``. If everything goes well, your screen's output should resemble mine's:
 
-![](resources/setup.png)
+[![asciicast](https://asciinema.org/a/246227.svg)](https://asciinema.org/a/246227)
 
 ## Usage
 

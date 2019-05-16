@@ -40,7 +40,7 @@ Because I initially coded this without distribution in mind, it was made without
 
 3. Your system has ``PHP``. I recommend version ``7``, because I haven't tested this tool with other versions of PHP. 
 
-4. Your system has ``OpenSSH`` and ``AutoSSH``. These are used to establish connections to [Serveo](http://serveo.net), which forwards ports and allows your locally served web pages to be available to the public.
+4. Your system has ``OpenSSH`` and ``AutoSSH``. These are used to establish connections to [Serveo](http://serveo.net), which forwards ports and allows your locally served web pages to be available publicly.
 
 5. You will clone all the main files to ``/var/www/html``, or copy them to that directory. This means that the directories ``account``, ``download``, ``img`` and ``verify``, plus the files ``index.php``, ``requirements.txt`` and ``setup.py`` will all be inside the directory ``/var/www/html``. This is the base directory, where Apache will serve ``index.php`` as the landing page, under the default url ``https://astroy.serveo.net``. The directories ``account``, ``account/instagram``, ``verify`` and ``download`` will all serve their files through PHP servers (either on custom ports or the default ones if none are provided as arguments), and will have the urls ``https://account.serveo.net``, ``https://app.serveo.net``, ``https://verify.serveo.net`` and ``https://download.serveo.net`` respectively. For the sake of avoiding conflict, be sure there are no existing files in ``/var/www/html`` before you copy or download Astroy's files to this directory.
 

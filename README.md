@@ -56,7 +56,15 @@ You basically need [``Apache2``](https://www.google.com/amp/s/likegeeks.com/linu
 
 Tap each package to get an idea on how the installation and configuration procedures are like (I couldn't possibly write the entire guide), and it will get you up and running in no time.
 
-Only after you are sure you've got things set up and working correctly should you proceed with the next step.
+For Kali Linux users (and Ubuntu) you can get the packages installed using this one liner:
+
+```sh
+apt-get install ssh autossh php apache
+```
+
+![](resources/install.png)
+
+You'd need to generate your SSH keys by typing ``ssh-keygen``. Only after you are sure you've got things set up and working correctly should you proceed with the next step.
 
 ## Installation
 

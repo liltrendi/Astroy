@@ -170,7 +170,7 @@ And you are live! All you need to do is send your target the landing page link, 
 
 2. Google Play Store Template - [trustedsec](https://github.com/trustedsec)
 
-3. Normal Sign Up Template - []()
+3. Normal Sign Up Template - [Joefrey](https://colorlib.com/wp/template/landerz/)
 
 4. Astroy Main Landing Page - []()
 

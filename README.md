@@ -60,7 +60,7 @@ Because I initially coded this without distribution in mind, it was made without
 
 You basically need [``Apache2``](https://www.google.com/amp/s/likegeeks.com/linux-web-server/amp/), [``OpenSSH``](https://www.google.com/amp/s/www.tecmint.com/install-openssh-server-in-linux/amp/), [``PHP``](https://www.tutorialspoint.com/php/php_installation_linux.htm) and [``AutoSSH``](https://www.everythingcli.org/ssh-tunnelling-for-fun-and-profit-autossh/).
 
-Tap each package to get an idea on how the installation and configuration procedures are like (I recommend consulting your package managers). For Kali Linux users (and Ubuntu) you can get the packages installed using this one-liner:
+Tap each package to get an idea of how the installation and configuration procedures are like (I recommend consulting your package managers). For Kali Linux users (and Ubuntu) you can get the packages installed using this one-liner:
 
 ```sh
 apt-get install ssh autossh php apache2

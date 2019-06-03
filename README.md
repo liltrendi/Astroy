@@ -144,7 +144,7 @@ Running it without any arguments makes the script default to using the default p
 python3 setup.py 80 555 777 888 999
 ```
 
-This tool assumes the first command line argument will always be ``80``. If otherwise, the script will disregard your arguments and default to the ports specified inside the file itself. Assuming that everything goes well, your screen's output should resemble mine's:
+This tool assumes the first command line argument will always be ``80``, which is Apache's default listening port. If you specify it otherwise, the script will disregard your arguments and default to the ports specified inside the file itself. Assuming that everything goes well, your screen's output should resemble mine's:
 
 [![asciicast](https://asciinema.org/a/246233.svg)](https://asciinema.org/a/246233)
 

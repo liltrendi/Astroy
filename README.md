@@ -65,7 +65,7 @@ Tap each package to get an idea on how the installation and configuration proced
 For Kali Linux users (and Ubuntu) you can get the packages installed using this one liner:
 
 ```sh
-apt-get install ssh autossh php apache
+apt-get install ssh autossh php apache2
 ```
 
 ![](resources/install.png)

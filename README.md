@@ -10,7 +10,7 @@
 
 > Astroy is a collection of templates outsourced from different projects, combined to launch a powerful, attractive and easy to pull off a two-in-one phishing and Android malware distribution campaign.
 
-[![asciicast](https://asciinema.org/a/246235.svg)](https://asciinema.org/a/246235)
+![](resources/astroy.png)
 
 I made this as a tool without distribution in mind, and did not think I would come to open-source it. As a result, a LOT of assumptions have been made when coding this, and it's gonna take you a bit of tweaking if the OS you're running isn't configured in accordance with how the script wants. Shouldn't be too hard, though.
 
@@ -158,7 +158,7 @@ astroy
 
 Your final output should resemble the one below:
 
-![](resources/astroy.png)
+[![asciicast](https://asciinema.org/a/246235.svg)](https://asciinema.org/a/246235)
 
 And you are live! All you need to do is send your target the landing page link, that is, ``https://astroy.serveo.net`` (there are tons of ways you could do this). Note that Serveo makes the link accessible through both ``http`` and ``https``. Since ``https`` is more appealing and convincing, all the anchor links point to ``https`` subdomains. Your job is to make sure you distribute the first link as ``https://astroy.serveo,net``, not as ``http://astroy.serveo.net`` (though using the latter is entirely up to you).
 

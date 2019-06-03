@@ -32,7 +32,7 @@ The Flappy Bird game is hardcoded with the LHOST ``serveo.net`` and LPORT ``2345
 
 ![](resources/meterpreter.png)
 
-This tool is capable of collecting emails, full names, dates of birth, usernames and passwords, alongside Instagram username and password combos. It also collects the user's IP address, user agents, type of device and logs the time that the user tried to access the pages on. 
+This tool is capable of collecting emails, full names and passwords, alongside Instagram username and password combos. It also collects the user's IP address, user agents, type of device and logs the time when the user tried to access the pages. 
 
 ![](resources/logs.png)
 

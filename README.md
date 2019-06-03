@@ -96,6 +96,8 @@ ls -l /var/www/html
 
 ![](resources/html.png)
 
+Notice that in the listing above, the root account has sole ownership of the files, and since we'll be relying on Apache to create, open and modify files as the scheme carries on, it will need to have ownership of the files too. 
+
 ## Setting Things Up
 
 Get into the base directory the script relies on:
@@ -109,6 +111,14 @@ You need to change ownership of the files recursively, to give Apache ownership.
 ```sh
 chown -R www-data *
 ```
+
+To see that it took effect, list the files again:
+
+```sh
+ls -l
+```
+
+![](resources/apachels.png)
 
 Depending on how you invoke Python 3 on your system, run this command to install the requirements needed by Python:
 

@@ -73,13 +73,13 @@ You'd need to generate your SSH keys by typing ``ssh-keygen``. Only after you ar
 Clone the repository:
 
 ```sh
-git clone https://github.com/briancanspit/astroy.git
+git clone https://github.com/briancanspit/Astroy.git
 ```
 
-Get into the cloned directory:
+Get into the cloned directory and list its files:
 
 ```sh
-cd astroy
+cd Astroy && ls -l
 ```
 
 Copy all the files in the directory to Apache's base directory:

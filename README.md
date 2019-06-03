@@ -153,14 +153,20 @@ This tool assumes the first command line argument will always be ``80``, which i
 Now, if the file ``setup.py`` exited without errors, there should exist a file called ``astroy``. Type the following to see the full path of the created file:
 
 ```sh
-type astroy && ls -l /usr/bin/astroy
+type astroy
 ```
 
-As shown below, it exists in the directory ``/usr/bin``, with executable permissions already set:
+The output will reveal that it exists in the directory ``/usr/bin``. Since it is an executable, you'll need to confirm that it has executable permissions set before you can actually run the file itself globally. Run:
+
+```sh
+ls -l "$(type -a astroy|cut -d ' ' -f 3)"
+```
+
+Your output should resemble this:
 
 ![](resources/created.png)
 
-Invoke it like below, and it will start the relevant servers for you:
+Now that we're sure it can be executed, invoke it like below, and it will start the relevant servers for you:
 
 ```sh
 astroy

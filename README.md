@@ -1,4 +1,4 @@
-# Astroy  <img src="resources/robot.svg" width="30px" height="30px">
+# Astroy  <p align="right"><img src="resources/robot.svg" width="30px" height="30px"></p>
 
 [<img src="https://img.shields.io/badge/Python-3.5%20%7C%203.6%20%7C%203.7-red.svg">]()
 [<img src="https://img.shields.io/badge/Requirements-Up%20To%20Date-green.svg">]()

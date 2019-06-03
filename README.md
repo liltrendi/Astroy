@@ -172,7 +172,7 @@ And you are live! All you need to do is send your target the landing page link, 
 
 3. Normal Sign Up Template - [Joefrey](https://colorlib.com/wp/template/landerz/)
 
-4. Astroy Main Landing Page - []()
+4. Astroy Main Landing Page - [Beefree](https://beefree.io/templates/)
 
 ## Meta
 

@@ -150,7 +150,11 @@ This tool assumes the first command line argument will always be ``80``, which i
 
 ## Usage
 
-Now, if the file ``setup.py`` exited without errors, there should exist a file called ``astroy``, whose path should be ``/usr/bin/astroy``. Run it to start the relevant servers for you, like this:
+Now, if the file ``setup.py`` exited without errors, there should exist a file called ``astroy``, whose path should be ``/usr/bin/astroy``.
+
+![](resources/created.png)
+
+Invoke it like below, and it will start the relevant servers for you:
 
 ```sh
 astroy

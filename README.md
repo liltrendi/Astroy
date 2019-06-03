@@ -60,9 +60,9 @@ Because I initially coded this without distribution in mind, it was made without
 
 You basically need [``Apache2``](https://www.google.com/amp/s/likegeeks.com/linux-web-server/amp/), [``OpenSSH``](https://www.google.com/amp/s/www.tecmint.com/install-openssh-server-in-linux/amp/), [``PHP``](https://www.tutorialspoint.com/php/php_installation_linux.htm) and [``AutoSSH``](https://www.everythingcli.org/ssh-tunnelling-for-fun-and-profit-autossh/).
 
-Tap each package to get an idea on how the installation and configuration procedures are like (I couldn't possibly write the entire guide), and it will get you up and running in no time.
+Tap each package to get an idea on how the installation and configuration procedures are like (I recommend consulting your package managers on the installation commands), and it will get you up and running in no time.
 
-For Kali Linux users (and Ubuntu) you can get the packages installed using this one liner:
+For Kali Linux users (and Ubuntu) you can get the packages installed using this one-liner:
 
 ```sh
 apt-get install ssh autossh php apache2
@@ -100,23 +100,23 @@ ls -l /var/www/html
 
 ![](resources/html.png)
 
-Notice that in the listing above, the root account has sole ownership of the files, and since we'll be relying on Apache to create, open and modify files as the scheme carries on, it will need to have ownership of the files too. 
+Notice that in the listing above, the root account has sole ownership of the all those files, and since we'll be relying on Apache to create, open and modify files on the fly, it will need to have ownership of the files too. 
 
 ## Setting Things Up
 
-Get into the base directory the script relies on:
+Get into Apache's base directory as needed by the tool:
 
 ```sh
 cd /var/www/html
 ```
 
-You need to change ownership of the files recursively, to give Apache ownership. Run:
+You need to change ownership of all the files here recursively, to give Apache ownership. Run:
 
 ```sh
 chown -R www-data *
 ```
 
-To see that it took effect, list the files again:
+List the files again to confirm the change in ownership occurred:
 
 ```sh
 ls -l

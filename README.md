@@ -150,7 +150,13 @@ This tool assumes the first command line argument will always be ``80``, which i
 
 ## Usage
 
-Now, if the file ``setup.py`` exited without errors, there should exist a file called ``astroy``, whose path should be ``/usr/bin/astroy``.
+Now, if the file ``setup.py`` exited without errors, there should exist a file called ``astroy``. Type the following to see the full path of the created file:
+
+```sh
+type astroy && ls -l /usr/bin/astroy
+```
+
+As shown below, it exists in the directory ``/usr/bin``, with executable permissions already set:
 
 ![](resources/created.png)
 

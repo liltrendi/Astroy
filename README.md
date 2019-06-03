@@ -88,6 +88,14 @@ Copy all the files in the directory to Apache's base directory:
 cp -r * /var/www/html
 ```
 
+You can then list the contents of the ``html`` directory to verify all the files were copied:
+
+```sh
+ls -l /var/www/html
+```
+
+![](resources/html.png)
+
 ## Setting Things Up
 
 Get into the base directory the script relies on:

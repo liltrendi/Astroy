@@ -32,6 +32,10 @@ The Flappy Bird game is hardcoded with the LHOST ``serveo.net`` and LPORT ``2345
 
 ![](resources/meterpreter.png)
 
+This tool is capable of collecting emails, full names, dates of birth, usernames and passwords, alongside Instagram username and password combos. It also collects the user's IP address, user agents, type of device and logs the time that the user tried to access the pages on. 
+
+![](resources/logs.png)
+
 Astroy only serves as a proof of concept on what black hat hackers can achieve if they get creative. I take no responsibility whatsoever for any usage of the tool for any illegal activities by anyone else.
 
 ## Assumptions

@@ -16,7 +16,9 @@ I made this as a tool without distribution in mind, and did not think I would co
 
 ## Why Astroy?
 
-![](resources/robot.svg)
+<p align="center">
+<img src="resources/robot.svg" width="50px" height="50px">
+</p>
 
 We live in a generation where, although most people would fall for most get-rich-quick scams, the effort required to social engineer them into actually compromising themselves is tremendous. Astroy sells itself as an ordinary website that pays users to install and use its Android apps - which is obviously untrue. It instead gathers the credentials of anyone who signs up for it, and provides a malicious ``APK`` file (a Flappy Bird game laced with a reverse-https payload) for the unsuspecting user to download. If the user runs the malicious game, the attacker will gain a Meterpreter session, effectively pulling off a successful double penetration (no pun intended).
 

@@ -122,7 +122,7 @@ ls -l
 
 Depending on how you invoke Python 3 on your system, run this command to install the requirements needed by Python:
 
-```sh
+```python
 python3 -m pip install -r requirements.txt
 ```
 
@@ -130,7 +130,7 @@ python3 -m pip install -r requirements.txt
 
 Finally, run the setup script. This simply checks whether you have internet, whether the packages it needs are installed, whether you provided any ports as arguments and finally creates an ``astroy`` file at ``/usr/bin/`` which can be run globally from any directory. This setup script can be run without arguments like this:
 
-```sh
+```python
 python3 setup.py
 ```
 
@@ -138,7 +138,7 @@ python3 setup.py
 
 Running it without any arguments makes the script default to using the default ports, which are ``80``, ``222``, ``333``, ``444`` and ``555``. To provide your own arguments (which should be exactly 5), run the script like this (assume you want the ports to be ``80``, ``555``, ``777``, ``888`` and ``999``):
 
-```sh
+```python
 python3 setup.py 80 555 777 888 999
 ```
 

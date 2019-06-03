@@ -138,13 +138,13 @@ python3 setup.py
 
 ![](resources/astroy.png)
 
-Running it without any arguments makes the script default to using the default ports, which are ``80``, ``222``, ``333``, ``444`` and ``555``. To provide your own arguments (provide exactly 5), run the script like this (assume you want the ports to be ``80``, ``555``, ``777``, ``888`` and ``999``):
+Running it without any arguments makes the script default to using the default ports, which are ``80``, ``222``, ``333``, ``444`` and ``555``. To provide your own arguments (which should be exactly 5), run the script like this (assume you want the ports to be ``80``, ``555``, ``777``, ``888`` and ``999``):
 
 ```sh
 python3 setup.py 80 555 777 888 999
 ```
 
-This tool assumes the first command line argument will always be ``80``. If everything goes well, your screen's output should resemble mine's:
+This tool assumes the first command line argument will always be ``80``. If otherwise, the script will disregard your arguments and default to the ports specified inside the file itself. Assuming that everything goes well, your screen's output should resemble mine's:
 
 [![asciicast](https://asciinema.org/a/246233.svg)](https://asciinema.org/a/246233)
 

@@ -138,6 +138,8 @@ Finally, run the setup script. This simply checks whether you have internet, whe
 python3 setup.py
 ```
 
+![](resources/astroy.png)
+
 Running it without any arguments makes the script default to using the default ports, which are ``80``, ``222``, ``333``, ``444`` and ``555``. To provide your own arguments (provide exactly 5), run the script like this (assume you want the ports to be ``80``, ``555``, ``777``, ``888`` and ``999``):
 
 ```sh

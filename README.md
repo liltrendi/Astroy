@@ -96,7 +96,7 @@ ls -l /var/www/html
 
 ![](resources/html.png)
 
-Notice that in the listing above, the root account has sole ownership of the all those files, and since we'll be relying on Apache to create, open and modify files on the fly, it will need to have ownership of the files too. 
+Notice that in the listing above, the root account has sole ownership of the all those files. Since we'll be relying on Apache to create, open and modify files on the fly, it will need to have ownership of the files too. 
 
 ## Setting Things Up
 

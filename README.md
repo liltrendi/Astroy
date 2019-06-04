@@ -12,7 +12,7 @@
 
 ![](resources/astroy.png)
 
-I made this as a tool without distribution in mind, and did not think I would come to open-source it. As a result, a LOT of assumptions have been made when coding this, and it's gonna take you a bit of tweaking if the OS you're running isn't configured how the tool needs it to be. Let's get started.
+I made this as a tool without distribution in mind, and did not think I would come to open-source it. As a result, a LOT of assumptions have been made when coding this, and it's gonna take you a bit of tweaking if the OS you're running isn't configured how the tool needs it to be.
 
 ## Why Astroy?
 

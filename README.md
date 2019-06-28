@@ -78,7 +78,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 ![](resources/yagmail.png)
 
-Do note that this is only required if you'd want to send your target an email containing the link. Otherwise, you can disregard it, however if you choose to send an email without setting the credentials it needs it won't work.
+Do note that this is only required if you'd want to send your target an email containing the link. Otherwise, you can disregard it, however if you choose to send an email without setting the credentials it needs it won't work. Be sure to toggle the switch that permits your Gmail account to permit less secure apps [here](https://www.google.com/settings/security/lesssecureapps), otherwise authentication will fail.
 
 Only after you are sure you've got things set up and working correctly should you proceed with the next step.
 

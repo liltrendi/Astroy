@@ -66,6 +66,19 @@ apt-get install ssh autossh php apache2
 
 ![](resources/install.png)
 
+Astroy offers an additional function that lets you email the generated link to your target's address. To do that, it uses the module Yagmail for email sending, and the module keyring, which basically stores your email and password locally so that you don't have to include them in any Python files. For this to work, you need to install the modules (this will be installed in the requirements part) and save your credentials using the Python interpreter. Invoke it, then enter these statements:
+
+```python
+Python 3.6.5rc1 (default, Mar 13 2018, 15:23:44)
+[GCC 7.3.0] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import keyring, yagmail
+>>> yagmail.register("yourGmailAddress@gmail.com","yourGmailPassword")
+>>> 
+```
+
+![](resources/yagmail.png)
+
 You'd need to generate your SSH keys by typing ``ssh-keygen``. Only after you are sure you've got things set up and working correctly should you proceed with the next step.
 
 ## Installation

@@ -80,6 +80,26 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 Do note that this is only required if you'd want to send your target an email containing the link. Otherwise, you can disregard it, however if you choose to send an email without setting the credentials it needs it won't work. Be sure to toggle the switch that allows your Gmail account to permit less secure apps [here](https://www.google.com/settings/security/lesssecureapps), otherwise authentication will fail.
 
+Finally, you need to make an initial connection to ``serveo`` so that it is added permanently to the list of known hosts. You can do that by running:
+
+```sh
+ssh serveo.net
+```
+
+It should then ask you ask whether you're sure about connecting to ``serveo``. Hit Enter or type yes then wait a second or two, and it should say something like:
+
+```sh
+The authenticity of host 'serveo.net (159.89.214.31)' can't be established.
+RSA key fingerprint is SHA256:07jcXlJ4SkBnyTmaVnmTpXuBiRx2+Q2adxbttO9gt0M.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'serveo.net,159.89.214.31' (RSA) to the list of known hosts.
+Press g to start a GUI session and ctrl-c to quit.
+```
+
+Press Ctrl-c and that'll be it. 
+
+![](resources/ssh.png)
+
 Only after you are sure you've got things set up and working correctly should you proceed with the next step.
 
 ## Installation

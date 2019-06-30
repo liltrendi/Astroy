@@ -178,7 +178,7 @@ python3 setup.py 80 2468 13579 642
 
 This tool assumes the first command line argument will always be ``80``, which is Apache's default listening port. If you specify it otherwise, the script will disregard your arguments and default to the ports specified inside the file itself. Assuming that everything goes well, your screen's output should resemble mine's:
 
-[![asciicast](https://asciinema.org/a/246233.svg)](https://asciinema.org/a/246233)
+[![asciicast](https://asciinema.org/a/aYLNJp7zASOnuLPansoislYIJ.svg)](https://asciinema.org/a/aYLNJp7zASOnuLPansoislYIJ)
 
 ## Usage
 

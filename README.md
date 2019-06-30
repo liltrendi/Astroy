@@ -206,7 +206,7 @@ astroy
 
 Your final output should resemble the one below:
 
-[![asciicast](https://asciinema.org/a/246235.svg)](https://asciinema.org/a/246235)
+[![asciicast](https://asciinema.org/a/254397.svg)](https://asciinema.org/a/254397)
 
 And you are live! All you need to do is send your target the landing page link, that is, ``https://astroy.serveo.net`` (there are tons of ways you could do this). Note that Serveo makes the link accessible through both ``http`` and ``https``. Since ``https`` is more appealing and convincing, all the anchor links point to ``https`` subdomains. Your job is to make sure you distribute the first link as ``https://astroy.serveo,net``, not as ``http://astroy.serveo.net`` (though using the latter is entirely up to you).
 

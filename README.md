@@ -212,6 +212,14 @@ And you are live! If you did not select the option to send the link via mail, yo
 
 ![](resources/email.png)
 
+## Information Gathered
+
+There are two templates with a form - the Instagram page located at ``account/instagram`` and the normal sign up page located at the directory ``account``. When a user visits either of the two pages and submits his registration information, a text file named ``captured.txt`` will be generated ( the ``account`` directory will have its own, as will ``account/instagram``) and will contain the username and password for the user. This text file will also contain his IP address, the date and time that he connected on and his browser details. 
+
+![](resources/captured.png)
+
+Additional ``logs.txt`` files will be generated in the base folder (``/var/www/html`` in this case) and in the ``download`` directory. Similarly, these contain time and date of connection info, browser details and an IP.
+
 ## Credits
 
 1. Instagram Phishing Template - [thelinuxchoice](https://github.com/thelinuxchoice)

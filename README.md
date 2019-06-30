@@ -220,6 +220,10 @@ There are two templates with a form - the Instagram page located at ``account/in
 
 Additional ``logs.txt`` files will be generated in the base folder (``/var/www/html`` in this case) and in the ``download`` directory. Similarly, these contain time and date of connection info, browser details and an IP.
 
+## Side Note
+
+``Serveo`` will disallow any more tunnelling attempts after you already open four instances. This is why I only serve the files from 4 links, and not more.
+
 ## Credits
 
 1. Instagram Phishing Template - [thelinuxchoice](https://github.com/thelinuxchoice)

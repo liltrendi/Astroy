@@ -66,20 +66,6 @@ apt-get install ssh autossh php apache2
 
 ![](resources/install.png)
 
-Astroy offers an additional function that lets you email the generated link to your target's address. To do that, it uses the module [``yagmail``](https://github.com/kootenpv/yagmail) for mailing, and [``keyring``](https://pypi.org/project/keyring/), which safely stores your password instead of including it in the source file. For this to work, you need to install the modules (this will be installed in the requirements part) and save your credentials using the Python interpreter. Invoke it, then enter these statements:
-
-```python
-Python 3.6.5rc1 (default, Mar 13 2018, 15:23:44)
-[GCC 7.3.0] on linux2
-Type "help", "copyright", "credits" or "license" for more information.
->>> import keyring, yagmail
->>> yagmail.register("yourGmailAddress@gmail.com","yourGmailPassword")
-```
-
-![](resources/yagmail.png)
-
-Do note that this is only required if you'd want to send your target an email containing the link. Otherwise, you can disregard it, however if you choose to send an email without setting the credentials it needs it won't work. Be sure to toggle the switch that allows your Gmail account to permit less secure apps [here](https://www.google.com/settings/security/lesssecureapps), otherwise authentication will fail.
-
 Finally, you need to make an initial connection to ``serveo`` so that it is added permanently to the list of known hosts. You can do that by running:
 
 ```sh
@@ -161,6 +147,20 @@ python3 -m pip install -r requirements.txt
 ```
 
 ![](resources/requirements.png)
+
+Astroy offers an additional function that lets you email the generated link to your target's address. To do that, it uses the module [``yagmail``](https://github.com/kootenpv/yagmail) for mailing, and [``keyring``](https://pypi.org/project/keyring/), which safely stores your password instead of including it in the source file. For this to work, you need to install the modules (this will be installed in the requirements part) and save your credentials using the Python interpreter. Invoke it, then enter these statements:
+
+```python
+Python 3.6.5rc1 (default, Mar 13 2018, 15:23:44)
+[GCC 7.3.0] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import keyring, yagmail
+>>> yagmail.register("yourGmailAddress@gmail.com","yourGmailPassword")
+```
+
+![](resources/yagmail.png)
+
+Do note that this is only required if you'd want to send your target an email containing the link. Otherwise, you can disregard it, however if you choose to send an email without setting the credentials it needs it won't work. Be sure to toggle the switch that allows your Gmail account to permit less secure apps [here](https://www.google.com/settings/security/lesssecureapps), otherwise authentication will fail.
 
 Finally, run the setup script. This simply checks whether you have internet, whether the packages it needs are installed, whether you provided any ports as arguments and finally creates an ``astroy`` file at ``/usr/bin/`` which can be run globally from any directory. This setup script can be run without arguments like this:
 

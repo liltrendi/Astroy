@@ -196,7 +196,7 @@ ls -l "$(type -a astroy|cut -d ' ' -f 3)"
 
 Your output should resemble this:
 
-![](resources/created.png)
+![](resources/createdvb.png)
 
 Now that we're sure it can be executed, invoke it like below, and it will start the relevant servers for you:
 

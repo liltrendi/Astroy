@@ -222,6 +222,8 @@ And you are live! If you did not select the option to send the link via mail, yo
 
 4. Astroy Main Landing Page - [Beefree](https://beefree.io/templates/)
 
+5. A couple of icons - [Icons8](https://icons8.com)
+
 ## Meta
 
 Shoot me a message on Twitter- [@briancanspit](https://twitter.com/briancanspit)

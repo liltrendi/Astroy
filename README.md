@@ -208,7 +208,9 @@ Your final output should resemble the one below:
 
 [![asciicast](https://asciinema.org/a/254397.svg)](https://asciinema.org/a/254397)
 
-And you are live! All you need to do is send your target the landing page link, that is, ``https://astroy.serveo.net`` (there are tons of ways you could do this). Note that Serveo makes the link accessible through both ``http`` and ``https``. Since ``https`` is more appealing and convincing, all the anchor links point to ``https`` subdomains. Your job is to make sure you distribute the first link as ``https://astroy.serveo,net``, not as ``http://astroy.serveo.net`` (though using the latter is entirely up to you).
+And you are live! If you did not select the option to send the link via mail, you will have to manually distribute the main link ``https://astroy.serveo.net`` by yourself. However, if you did select the mailing option, that will be taken care of. In fact, the default email that it sends is actually a nice looking template with two buttons that redirect to the link you specify - it has a legitimate appeal overally. Check out the mail I received:
+
+![](resources/email.png)
 
 ## Credits
 

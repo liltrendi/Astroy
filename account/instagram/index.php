@@ -2,7 +2,15 @@
 ini_set('session.cookie_domain','.serveo.net');
 session_start();
 date_default_timezone_set("Africa/Nairobi");
-$ip=$_SERVER['REMOTE_ADDR'];
+if (!empty($_SERVER["HTTP_CLIENT_IP"])){
+//check for ip from share internet
+    $ip = $_SERVER["HTTP_CLIENT_IP"];
+}elseif (!empty($_SERVER["HTTP_X_FORWARDED_FOR"])){
+    // Check for the Proxy User
+    $ip = $_SERVER["HTTP_X_FORWARDED_FOR"];
+}else{
+    $ip = $_SERVER["REMOTE_ADDR"];
+}
 $date=date("d/m/Y");
 $time=date("h:i:sa");
 $data="The user ".$ip." connected on ".$date." at ".$time.", ";

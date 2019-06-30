@@ -1,0 +1,38 @@
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #9e4f16;
+}
+.loader-logo {
+  z-index: 5;
+  width: 150px;
+  height: 150px;
+  padding-bottom: 10px;
+  background-image: url("https://img.icons8.com/doodle/480/000000/instagram.png");
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: center;
+}
+.loader-circle {
+  border-top: 1px solid yellow;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

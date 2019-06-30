@@ -1,0 +1,10 @@
+html{
+    scroll-behavior:smooth;
+}
+body{
+    background-color:#9e4f16;
+}
+.navbar-inverse .navbar-nav li a:hover{
+    background-color:#9e4f16;
+}
+

@@ -98,7 +98,7 @@ Press g to start a GUI session and ctrl-c to quit.
 
 Press Ctrl-c and that'll be it. 
 
-![](resources/ssh.png)
+![](resources/scrot.png)
 
 Only after you are sure you've got things set up and working correctly should you proceed with the next step.
 

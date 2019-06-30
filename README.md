@@ -102,7 +102,7 @@ Get into the cloned directory and list its files:
 cd Astroy && ls -l
 ```
 
-Copy all the files in the directory to Apache's base directory:
+Copy all the files in the directory to Apache's base directory (if there are any existing files in there, be sure to move them to a different location to avoid conflict with these files):
 
 ```sh
 cp -r * /var/www/html

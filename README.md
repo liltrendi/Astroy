@@ -212,7 +212,7 @@ And you are live! If you did not select the option to send the link via mail, yo
 
 ![](resources/email.png)
 
-## Information Gathered
+## Collecting Credentials
 
 There are two templates with a form - the Instagram page located at ``account/instagram`` and the normal sign up page located at the directory ``account``. When a user visits either of the two pages and submits his registration information, a text file named ``captured.txt`` will be generated ( the ``account`` directory will have its own, as will ``account/instagram``) and will contain the username and password for the user. This text file will also contain his IP address, the date and time that he connected on and his browser details. 
 

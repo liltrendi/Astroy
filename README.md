@@ -148,7 +148,7 @@ python3 -m pip install -r requirements.txt
 
 ![](resources/requirements.png)
 
-Astroy offers an additional functionality that lets you email the generated link to your target's address. To do that, it uses the module [``yagmail``](https://github.com/kootenpv/yagmail) for mailing, and [``keyring``](https://pypi.org/project/keyring/), which safely stores your password locally instead of you having to include it in the source file. For this to work, you need to import the two modules and save your credentials (email and password to the email you'll want to use to send the mail from) using the Python interpreter. Invoke it, then enter these statements:
+Astroy offers an additional functionality that lets you email the generated link to your target's address. To do that, it uses the module [``yagmail``](https://github.com/kootenpv/yagmail) for mailing, and [``keyring``](https://pypi.org/project/keyring/), which safely stores your password locally instead of you having to include it in the source file. For this to work, you need to import the two modules and save your credentials (email and password to the email you'll want to use to send the mail from) using the Python interpreter. Invoke the interpreter, then enter these statements:
 
 ```python
 Python 3.6.5rc1 (default, Mar 13 2018, 15:23:44)

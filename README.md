@@ -170,7 +170,7 @@ python3 setup.py
 
 ![](resources/astroy.png)
 
-Running it without any arguments makes the script default to using the default ports, which are ``80``, ``55``, ``777`` and ``999``. To provide your own arguments (which should be exactly 4), run the script like this (assume you want the ports to be ``80``, ``2468``, ``13579`` and ``642``):
+Running it without any arguments makes the script default to using the default ports, which are ``80``, ``555``, ``777`` and ``999``. To provide your own arguments (which should be exactly 4), run the script like this (assume you want the ports to be ``80``, ``2468``, ``13579`` and ``642``):
 
 ```python
 python3 setup.py 80 2468 13579 642

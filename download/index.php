@@ -14,7 +14,7 @@ if (!empty($_SERVER["HTTP_CLIENT_IP"])){
 
 $date=date("d/m/Y");
 $time=date("h:i:sa");
-$data="The user ".$ipAddress." connected on ".$date." at ".$time.", ";
+$data="The user ".$ip." connected on ".$date." at ".$time.", ";
 
 function getBrowser() 
 { 

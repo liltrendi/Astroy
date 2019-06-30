@@ -191,7 +191,7 @@ type astroy
 The output will reveal that it exists in the directory ``/usr/bin``. Since it is an executable, you'll need to confirm that it has executable permissions set before you can actually run the file itself globally. Run:
 
 ```sh
-ls -l "$(type -a astroy|cut -d ' ' -f 3)"
+ls -l $(type -a astroy|cut -d ' ' -f 3)
 ```
 
 Your output should resemble this:

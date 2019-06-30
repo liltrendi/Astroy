@@ -403,10 +403,10 @@ function tryAgain(){
   <h1><strong>Verify Your Account</strong></h1><br>
   <?php echo "<div style='text-align:center;margin:0 auto;'>".$instadata."</div>"; ?>
   <br><br><br><br>
-  <?php if(!isset($_SESSION['invalidLogin'])) ?>
+  <?php if(!isset($_SESSION['invalidLogin'])){ ?>
   <button onclick="modalExit()">No, It's Not</button>
   <button onclick="confirmAccount()">Yes, That's Me</button>
-  <?php ?>
+  <?php } ?>
   <?php if(isset($_SESSION['invalidLogin'])){ unset($_SESSION['invalidLogin']); ?>
   <button onclick="normalSignup()">Normal Signup</button>
   <button onclick="tryAgain()">Try Again</button>

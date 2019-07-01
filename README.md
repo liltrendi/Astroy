@@ -67,7 +67,7 @@ apt-get install ssh autossh php apache2
 
 ![](resources/install.png)
 
-Finally, you need to make an initial connection to ``serveo`` so that it is added permanently to the list of known hosts. You can do that by running:
+Then, you need to make an initial connection to ``serveo`` so that it is added permanently to the list of known hosts. You can do that by running:
 
 ```sh
 ssh serveo.net

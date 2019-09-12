@@ -15,6 +15,23 @@
 
 I made this as a tool without distribution in mind, and did not think I would come to open-source it. As a result, a LOT of assumptions have been made when coding this, and it's gonna take you a bit of tweaking if the OS you're running isn't configured how the tool needs it to be.
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE-->
+**Table of Contents**
+- [Sections](#astroy--img-srcresourcesrobotsvg-width22px-height22px)
+    - [Why Astroy?](#why-astroy)
+    - [Assumptions](#assumptions)
+    - [Pre-requisites](#pre-requisites)
+    - [Installation](#installation)
+    - [Setting Things Up](#setting-things-up)
+    - [Usage](#usage)
+    - [Collecting Credentials](#collecting-credentials)
+    - [Side Note](#side-note)
+    - [Credits](#credits)
+    - [Meta](#meta)
+    - [Donate](#donate)
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Why Astroy?
 
 <img src="resources/flappy.jpg" width="100%" height="300px">

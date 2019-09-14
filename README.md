@@ -18,7 +18,7 @@ I made this as a tool without distribution in mind, and did not think I would co
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE-->
 **Table of Contents**
-- [Introduction](#astroy--img-srcresourcesrobotsvg-width22px-height22px)
+- [Introduction](https://github.com/briancanspit/Astroy/blob/master/README.md#why-astroy)
     - [Why Astroy?](#why-astroy)
     - [Assumptions](#assumptions)
 - [Getting Started](https://github.com/briancanspit/Astroy/blob/master/README.md#pre-requisites)

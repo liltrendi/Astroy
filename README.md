@@ -18,15 +18,18 @@ I made this as a tool without distribution in mind, and did not think I would co
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE-->
 **Table of Contents**
-- [Sections](#astroy--img-srcresourcesrobotsvg-width22px-height22px)
+- [Introduction](#astroy--img-srcresourcesrobotsvg-width22px-height22px)
     - [Why Astroy?](#why-astroy)
     - [Assumptions](#assumptions)
+- [Getting Started](#astroy--img-srcresourcesrobotsvg-width22px-height22px)
     - [Pre-requisites](#pre-requisites)
     - [Installation](#installation)
     - [Setting Things Up](#setting-things-up)
+- [Using Astroy](#astroy--img-srcresourcesrobotsvg-width22px-height22px)
     - [Usage](#usage)
     - [Collecting Credentials](#collecting-credentials)
     - [Side Note](#side-note)
+- [Miscellaneous](#astroy--img-srcresourcesrobotsvg-width22px-height22px)
     - [Credits](#credits)
     - [Meta](#meta)
     - [Donate](#donate)

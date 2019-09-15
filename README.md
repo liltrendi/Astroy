@@ -25,7 +25,7 @@ I made this as a tool without distribution in mind, and did not think I would co
     - [Pre-requisites](#pre-requisites)
     - [Installation](#installation)
     - [Setting Things Up](#setting-things-up)
-- [Using Astroy](https://github.com/briancanspit/Astroy/blob/master/README.md#usage)
+- [Launching The Attack](https://github.com/briancanspit/Astroy/blob/master/README.md#usage)
     - [Usage](#usage)
     - [Collecting Credentials](#collecting-credentials)
     - [Side Note](#side-note)
